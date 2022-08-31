@@ -1,6 +1,6 @@
 nome = input('Qual o seu nome?')
 
-print('Seja bem-vindo(a),', nome)
+print('Seja bem-vindo(a),{}!' .format(nome))
 
 ano = input('Digite o ano em que você nasceu')
 mes = input('Agora, informe o mês de seu nascimento')
