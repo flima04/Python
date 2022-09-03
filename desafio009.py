@@ -1,23 +1,13 @@
 n = int(input('Digite um número e mostrarei sua tabuada.'))
 
-n1 = n
-n2 = n*2
-n3 = n*3
-n4 = n*4
-n5 = n*5
-n6 = n*6
-n7 = n*7
-n8 = n*8
-n9 = n*9
-n10 = n*10
 
-print('{}x1={:2}' .format(n, n1))
-print('{}x2={:2}' .format(n, n2))
-print('{}x3={:2}' .format(n, n3))
-print('{}x4={:2}' .format(n, n4))
-print('{}x5={:2}' .format(n, n5))
-print('{}x6={:2}' .format(n, n6))
-print('{}x7={:2}' .format(n, n7))
-print('{}x8={:2}' .format(n, n8))
-print('{}x9={:2}' .format(n, n9))
-print('{}x10={}' .format(n, n10))
+print('{} x {:2} = {}' .format(n, 1, n*1))
+print('{} x {:2} = {}' .format(n, 2, n*2))
+print('{} x {:2} = {}' .format(n, 3, n*3))
+print('{} x {:2} = {}' .format(n, 4, n*4))
+print('{} x {:2} = {}' .format(n, 5, n*5))
+print('{} x {:2} = {}' .format(n, 6, n*6))
+print('{} x {:2} = {}' .format(n, 7, n*7))
+print('{} x {:2} = {}' .format(n, 8, n*8))
+print('{} x {:2} = {}' .format(n, 9, n*9))
+print('{} x {:2} = {}' .format(n, 10, n*10))
