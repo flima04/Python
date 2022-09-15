@@ -1,4 +1,4 @@
-preco = float(input('Digite o valor do produto'))
+preco = float(input('Digite o valor da compra'))
 forma = str(input('Digite a forma de pagamento. Escolha entre: Dinheiro, Cheque, Cartão à vista, 2 ou mais parcelas(Digite apenas o número de parcelas)')).title()
 
 if forma == 'Dinheiro' or forma == 'Cheque':

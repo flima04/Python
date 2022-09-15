@@ -1,9 +1,13 @@
+from datetime import date
+
 nasc = int(input('Digite seu ano de nascimento'))
-idade = 2022-nasc
+idade = (date.today().year)-nasc
 
 if idade < 18:
-    print('Voce ainda vai se alistar. Aguarde.')
+    saldo = 18 - idade
+    print('Voce deverá se alistar em {} ano(s). Aguarde.' .format(saldo))
 elif idade == 18:
-    print('Hora de se alistar!')
+    print('Você completa 18 anos em {}. Hora de se alistar!' .format(date.today().year))
 else:
-    print('Você já passou do prazo de alistamento!')
+    saldo = idade - 18
+    print('Você já passou do prazo de alistamento! Seu alistamento ocorreu há {} ano(s), em {}.' .format(saldo, (date.today().year - (saldo))))
