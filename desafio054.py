@@ -1,16 +1,10 @@
 from datetime import date
 
-lista = []
 maioridade = 0
 menoridade = 0
 
-for r in range(0,7):
-    x = int(input('Digite o ano de nascimento'))
-    lista.append(x)
-
-
-for n in range (0,7):
-    ano = lista[n]
+for r in range(1,8):
+    ano = int(input('Digite o ano de nascimento da {}ª pessoa: ' .format(r)))
     idade = date.today().year - ano
     if idade >= 18:
         maioridade += 1

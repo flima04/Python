@@ -1,8 +1,13 @@
-num = int(input('Digite um número: '))
+num = int(input("Digite um número: "))
+contador = 0
 
-if num > 3 and num % 2 != 0 and num % 5 != 0 or num % 3 != 0:
-    print('O numero {} é primo.' .format(num))
-elif num == 2 or 3:
-    print('O numero {} é primo.' .format(num))
+for r in range(1, num + 1):
+    if num % r == 0:
+        contador += 1
+
+print("O número {} foi divisível {} vezes!".format(num, contador))
+
+if contador == 2:
+    print("O número é primo")
 else:
-    print('O numero {} NÃO é primo.' .format(num))
+    print("O número não é primo")
