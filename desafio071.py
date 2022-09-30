@@ -1,6 +1,6 @@
 # Caixa eletronico
 
-valor = int(input('Digite o valor a ser sacado: '))
+valor = int(input('Digite o valor a ser sacado: R$'))
 cedulas50 = cedulas20 = cedulas10 = cedulas1 = 0
 
 

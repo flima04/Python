@@ -6,10 +6,7 @@ while True:
     nome = str(input('Digite o nome do produto: ')).strip().upper()
     preço = float(input('Digite o valor do produto'))
     total += preço
-    if maisbaratopreço == 0:
-        maisbaratonome = nome
-        maisbaratopreço = preço
-    if maisbaratopreço > preço:
+    if maisbaratopreço == 0 or maisbaratopreço > preço:
         maisbaratonome = nome
         maisbaratopreço = preço
     if preço >= 1000:
@@ -18,5 +15,5 @@ while True:
     if resposta == 'N':
         break
 
-print(f'O total das compras é igual a R${total:.2f}, o produto mais barato é {maisbaratonome} e {maisde1000} produtos custam mais de R$1000,00 reais')
+print(f'O total das compras é igual a R${total:.2f}, o produto mais barato é {maisbaratonome}, que custa R${maisbaratopreço:.2f}, e {maisde1000} produtos custam mais de R$1000,00 reais')
     
